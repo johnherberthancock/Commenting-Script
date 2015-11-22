@@ -14,8 +14,9 @@ public class Main {
 		scan.useDelimiter(System.getProperty("line.separator"));//Seperator for lines is delimiter
 		while(scan.hasNextLine()){//Iterates through Java File		
 				String comment = scan.findInLine("//");//Finds the next //
-				test = scan.next();//Grabs the next WORD
+				
 				if(comment != null){
+					test = scan.next();//Grabs the next WORD
 					//When comment found, prints it
 					System.out.println(test);
 				}
